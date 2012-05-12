@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B35A132F155D5961001B975A /* SceneCamilo.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A132E155D5961001B975A /* SceneCamilo.m */; };
+		B35A1332155D59AA001B975A /* SceneMark.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A1331155D59AA001B975A /* SceneMark.m */; };
+		B35A1338155D6192001B975A /* button_camilo.png in Resources */ = {isa = PBXBuildFile; fileRef = B35A1336155D6192001B975A /* button_camilo.png */; };
+		B35A1339155D6192001B975A /* button_mark.png in Resources */ = {isa = PBXBuildFile; fileRef = B35A1337155D6192001B975A /* button_mark.png */; };
 		B3C205A1155C047500052E01 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C205A0155C047400052E01 /* QuartzCore.framework */; };
 		B3C205A3155C047500052E01 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C205A2155C047500052E01 /* OpenGLES.framework */; };
 		B3C205A5155C047500052E01 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C205A4155C047500052E01 /* OpenAL.framework */; };
@@ -125,6 +129,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B35A132D155D5961001B975A /* SceneCamilo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneCamilo.h; sourceTree = "<group>"; };
+		B35A132E155D5961001B975A /* SceneCamilo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneCamilo.m; sourceTree = "<group>"; };
+		B35A1330155D59AA001B975A /* SceneMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneMark.h; sourceTree = "<group>"; };
+		B35A1331155D59AA001B975A /* SceneMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneMark.m; sourceTree = "<group>"; };
+		B35A1336155D6192001B975A /* button_camilo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_camilo.png; path = Resources/button_camilo.png; sourceTree = "<group>"; };
+		B35A1337155D6192001B975A /* button_mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_mark.png; path = Resources/button_mark.png; sourceTree = "<group>"; };
 		B3C2059C155C047400052E01 /* Beat Flick Beta 0.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beat Flick Beta 0.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C205A0155C047400052E01 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B3C205A2155C047500052E01 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -426,6 +436,10 @@
 				B3C205B1155C047500052E01 /* Resources */,
 				B3C205C5155C047500052E01 /* libs */,
 				B3C206FE155C047F00052E01 /* Supporting Files */,
+				B35A132D155D5961001B975A /* SceneCamilo.h */,
+				B35A132E155D5961001B975A /* SceneCamilo.m */,
+				B35A1330155D59AA001B975A /* SceneMark.h */,
+				B35A1331155D59AA001B975A /* SceneMark.m */,
 			);
 			path = "Beat Flick Beta 0.1";
 			sourceTree = "<group>";
@@ -433,6 +447,8 @@
 		B3C205B1155C047500052E01 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B35A1336155D6192001B975A /* button_camilo.png */,
+				B35A1337155D6192001B975A /* button_mark.png */,
 				B3C205B2155C047500052E01 /* Default.png */,
 				B3C205B4155C047500052E01 /* fps_images.png */,
 				B3C205B6155C047500052E01 /* Icon-72.png */,
@@ -817,6 +833,8 @@
 				B3C205BF155C047500052E01 /* Icon.png in Resources */,
 				B3C205C1155C047500052E01 /* Icon@2x.png in Resources */,
 				B3C205C4155C047500052E01 /* iTunesArtwork in Resources */,
+				B35A1338155D6192001B975A /* button_camilo.png in Resources */,
+				B35A1339155D6192001B975A /* button_mark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,6 +943,8 @@
 				B3C20704155C047F00052E01 /* AppDelegate.m in Sources */,
 				B3C20707155C047F00052E01 /* RootViewController.m in Sources */,
 				B3C2070A155C047F00052E01 /* HelloWorldLayer.m in Sources */,
+				B35A132F155D5961001B975A /* SceneCamilo.m in Sources */,
+				B35A1332155D59AA001B975A /* SceneMark.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -976,6 +996,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Beat Flick Beta 0.1/Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Beat Flick Beta 0.1/Resources/Info.plist";
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -991,6 +1012,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Beat Flick Beta 0.1/Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Beat Flick Beta 0.1/Resources/Info.plist";
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1018,6 +1040,7 @@
 				B3C20710155C047F00052E01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
