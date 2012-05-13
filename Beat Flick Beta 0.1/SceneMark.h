@@ -6,8 +6,10 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CCScene.h"
+#import "cocos2d.h"
 
-@interface SceneMark : CCScene
+@interface SceneMark : CCLayer
 
+//creates a scene with SceneMark as the only Layer
++(CCScene *) scene;
 @end

@@ -64,6 +64,19 @@ enum {
 
 - (void) ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView:[touch view]];
+    location = [[CCDirector sharedDirector] convertToGL:location];
+    CCNode *spriteMark = [self getChildByTag:mark];
+    CCNode *spriteCamilo = [self getChildByTag:camilo];
+	if (CGRectContainsPoint([spriteMark boundingBox], location)) {
+        [spriteMark runAction:[CCScaleBy actionWithDuration:.05 scale:0.95]];
+        //[self sceneMark];
+    }
+    
+    if (CGRectContainsPoint([spriteCamilo boundingBox], location)) {
+        [self sceneCamilo];
+    }
 
 }
 
@@ -74,18 +87,26 @@ enum {
     CCNode *spriteMark = [self getChildByTag:mark];
     CCNode *spriteCamilo = [self getChildByTag:camilo];
 	if (CGRectContainsPoint([spriteMark boundingBox], location)) {
+        [spriteMark runAction:[CCScaleBy actionWithDuration:.05 scale:1]];
         [self sceneMark];
     }
     
     if (CGRectContainsPoint([spriteCamilo boundingBox], location)) {
         [self sceneCamilo];
     }
+    else {
+        [spriteMark runAction:[CCScaleTo  actionWithDuration:.05 scale:1]];
+        [spriteCamilo runAction:[CCScaleTo actionWithDuration:.05 scale:1]];
+    
+    }
 }
 
 -(void)sceneMark
 {
     [[CCDirector sharedDirector] replaceScene:[SceneMark node]];
-}
+   //  
+     
+     }
 
 -(void)sceneCamilo
 {

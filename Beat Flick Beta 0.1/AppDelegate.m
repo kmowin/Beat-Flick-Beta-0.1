@@ -103,7 +103,10 @@
 	// Default texture format for PNG/BMP/TIFF/JPEG/GIF images
 	// It can be RGBA8888, RGBA4444, RGB5_A1, RGB565
 	// You can change anytime.
-	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
+    
+    //Set to RGBA8888 for high quality background images. Can be set back at any stage!
+    //Should probably eventually be done before the background texture is loaded, then reset for drawing the rest of the textures.
+	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
 
 	
 	// Removes the startup flicker
