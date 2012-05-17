@@ -126,6 +126,27 @@
 		B3C20704155C047F00052E01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C20703155C047F00052E01 /* AppDelegate.m */; };
 		B3C20707155C047F00052E01 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C20706155C047F00052E01 /* RootViewController.m */; };
 		B3C2070A155C047F00052E01 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C20709155C047F00052E01 /* HelloWorldLayer.m */; };
+		B3C3059B15601F2800DE4F71 /* TopMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3059A15601F2800DE4F71 /* TopMenuLayer.m */; };
+		B3C3059D1560212700DE4F71 /* topMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C3059C1560212700DE4F71 /* topMenu.png */; };
+		B3C305A8156030DB00DE4F71 /* OptionsMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C305A7156030DB00DE4F71 /* OptionsMenuLayer.m */; };
+		B3C305B9156065CD00DE4F71 /* buttonMusic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305B1156065CD00DE4F71 /* buttonMusic.png */; };
+		B3C305BA156065CD00DE4F71 /* buttonMusicPress.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305B2156065CD00DE4F71 /* buttonMusicPress.png */; };
+		B3C305BB156065CD00DE4F71 /* buttonPhotos.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305B3156065CD00DE4F71 /* buttonPhotos.png */; };
+		B3C305BC156065CD00DE4F71 /* buttonPhotosPress.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305B4156065CD00DE4F71 /* buttonPhotosPress.png */; };
+		B3C305BD156065CD00DE4F71 /* buttonPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305B5156065CD00DE4F71 /* buttonPlay.png */; };
+		B3C305BE156065CD00DE4F71 /* buttonPlayPress.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305B6156065CD00DE4F71 /* buttonPlayPress.png */; };
+		B3C305BF156065CD00DE4F71 /* buttonVideos.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305B7156065CD00DE4F71 /* buttonVideos.png */; };
+		B3C305C0156065CD00DE4F71 /* buttonVideosPress.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305B8156065CD00DE4F71 /* buttonVideosPress.png */; };
+		B3C305CD156129C800DE4F71 /* windowImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305C8156129C800DE4F71 /* windowImage1.png */; };
+		B3C305CE156129C800DE4F71 /* windowImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305C9156129C800DE4F71 /* windowImage2.png */; };
+		B3C305CF156129C800DE4F71 /* windowImage3.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305CA156129C800DE4F71 /* windowImage3.png */; };
+		B3C305D0156129C800DE4F71 /* windowImage4.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305CB156129C800DE4F71 /* windowImage4.png */; };
+		B3C305D1156129C800DE4F71 /* windowImage5.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C305CC156129C800DE4F71 /* windowImage5.png */; };
+		B3C306311561AD8F00DE4F71 /* PlayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C306301561AD8E00DE4F71 /* PlayLayer.m */; };
+		B3C306341561AF5000DE4F71 /* PhotosLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C306331561AF5000DE4F71 /* PhotosLayer.m */; };
+		B3C3063A1561B2D600DE4F71 /* MusicLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C306391561B2D600DE4F71 /* MusicLayer.m */; };
+		B3C3063D1561B3D600DE4F71 /* VideosLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3063C1561B3D500DE4F71 /* VideosLayer.m */; };
+		B3C306401561BB6100DE4F71 /* HomeMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3063F1561BB6000DE4F71 /* HomeMenuLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -370,6 +391,34 @@
 		B3C20708155C047F00052E01 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		B3C20709155C047F00052E01 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		B3C2070B155C047F00052E01 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		B3C3059915601F2800DE4F71 /* TopMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMenuLayer.h; sourceTree = "<group>"; };
+		B3C3059A15601F2800DE4F71 /* TopMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMenuLayer.m; sourceTree = "<group>"; };
+		B3C3059C1560212700DE4F71 /* topMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = topMenu.png; path = Resources/topMenu.png; sourceTree = "<group>"; };
+		B3C305A6156030DB00DE4F71 /* OptionsMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsMenuLayer.h; sourceTree = "<group>"; };
+		B3C305A7156030DB00DE4F71 /* OptionsMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsMenuLayer.m; sourceTree = "<group>"; };
+		B3C305B1156065CD00DE4F71 /* buttonMusic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonMusic.png; path = Resources/buttonMusic.png; sourceTree = "<group>"; };
+		B3C305B2156065CD00DE4F71 /* buttonMusicPress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonMusicPress.png; path = Resources/buttonMusicPress.png; sourceTree = "<group>"; };
+		B3C305B3156065CD00DE4F71 /* buttonPhotos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonPhotos.png; path = Resources/buttonPhotos.png; sourceTree = "<group>"; };
+		B3C305B4156065CD00DE4F71 /* buttonPhotosPress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonPhotosPress.png; path = Resources/buttonPhotosPress.png; sourceTree = "<group>"; };
+		B3C305B5156065CD00DE4F71 /* buttonPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonPlay.png; path = Resources/buttonPlay.png; sourceTree = "<group>"; };
+		B3C305B6156065CD00DE4F71 /* buttonPlayPress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonPlayPress.png; path = Resources/buttonPlayPress.png; sourceTree = "<group>"; };
+		B3C305B7156065CD00DE4F71 /* buttonVideos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonVideos.png; path = Resources/buttonVideos.png; sourceTree = "<group>"; };
+		B3C305B8156065CD00DE4F71 /* buttonVideosPress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonVideosPress.png; path = Resources/buttonVideosPress.png; sourceTree = "<group>"; };
+		B3C305C8156129C800DE4F71 /* windowImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windowImage1.png; path = Resources/windowImage1.png; sourceTree = "<group>"; };
+		B3C305C9156129C800DE4F71 /* windowImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windowImage2.png; path = Resources/windowImage2.png; sourceTree = "<group>"; };
+		B3C305CA156129C800DE4F71 /* windowImage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windowImage3.png; path = Resources/windowImage3.png; sourceTree = "<group>"; };
+		B3C305CB156129C800DE4F71 /* windowImage4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windowImage4.png; path = Resources/windowImage4.png; sourceTree = "<group>"; };
+		B3C305CC156129C800DE4F71 /* windowImage5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windowImage5.png; path = Resources/windowImage5.png; sourceTree = "<group>"; };
+		B3C3062F1561AD8E00DE4F71 /* PlayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayLayer.h; sourceTree = "<group>"; };
+		B3C306301561AD8E00DE4F71 /* PlayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayLayer.m; sourceTree = "<group>"; };
+		B3C306321561AF4F00DE4F71 /* PhotosLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosLayer.h; sourceTree = "<group>"; };
+		B3C306331561AF5000DE4F71 /* PhotosLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosLayer.m; sourceTree = "<group>"; };
+		B3C306381561B2D600DE4F71 /* MusicLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicLayer.h; sourceTree = "<group>"; };
+		B3C306391561B2D600DE4F71 /* MusicLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicLayer.m; sourceTree = "<group>"; };
+		B3C3063B1561B3D500DE4F71 /* VideosLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosLayer.h; sourceTree = "<group>"; };
+		B3C3063C1561B3D500DE4F71 /* VideosLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosLayer.m; sourceTree = "<group>"; };
+		B3C3063E1561BB6000DE4F71 /* HomeMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMenuLayer.h; sourceTree = "<group>"; };
+		B3C3063F1561BB6000DE4F71 /* HomeMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMenuLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -440,6 +489,20 @@
 				B35A132E155D5961001B975A /* SceneCamilo.m */,
 				B35A1330155D59AA001B975A /* SceneMark.h */,
 				B35A1331155D59AA001B975A /* SceneMark.m */,
+				B3C3059915601F2800DE4F71 /* TopMenuLayer.h */,
+				B3C3059A15601F2800DE4F71 /* TopMenuLayer.m */,
+				B3C305A6156030DB00DE4F71 /* OptionsMenuLayer.h */,
+				B3C305A7156030DB00DE4F71 /* OptionsMenuLayer.m */,
+				B3C3062F1561AD8E00DE4F71 /* PlayLayer.h */,
+				B3C306301561AD8E00DE4F71 /* PlayLayer.m */,
+				B3C306321561AF4F00DE4F71 /* PhotosLayer.h */,
+				B3C306331561AF5000DE4F71 /* PhotosLayer.m */,
+				B3C306381561B2D600DE4F71 /* MusicLayer.h */,
+				B3C306391561B2D600DE4F71 /* MusicLayer.m */,
+				B3C3063B1561B3D500DE4F71 /* VideosLayer.h */,
+				B3C3063C1561B3D500DE4F71 /* VideosLayer.m */,
+				B3C3063E1561BB6000DE4F71 /* HomeMenuLayer.h */,
+				B3C3063F1561BB6000DE4F71 /* HomeMenuLayer.m */,
 			);
 			path = "Beat Flick Beta 0.1";
 			sourceTree = "<group>";
@@ -447,6 +510,20 @@
 		B3C205B1155C047500052E01 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B3C305C8156129C800DE4F71 /* windowImage1.png */,
+				B3C305C9156129C800DE4F71 /* windowImage2.png */,
+				B3C305CA156129C800DE4F71 /* windowImage3.png */,
+				B3C305CB156129C800DE4F71 /* windowImage4.png */,
+				B3C305CC156129C800DE4F71 /* windowImage5.png */,
+				B3C305B1156065CD00DE4F71 /* buttonMusic.png */,
+				B3C305B2156065CD00DE4F71 /* buttonMusicPress.png */,
+				B3C305B3156065CD00DE4F71 /* buttonPhotos.png */,
+				B3C305B4156065CD00DE4F71 /* buttonPhotosPress.png */,
+				B3C305B5156065CD00DE4F71 /* buttonPlay.png */,
+				B3C305B6156065CD00DE4F71 /* buttonPlayPress.png */,
+				B3C305B7156065CD00DE4F71 /* buttonVideos.png */,
+				B3C305B8156065CD00DE4F71 /* buttonVideosPress.png */,
+				B3C3059C1560212700DE4F71 /* topMenu.png */,
 				B35A1336155D6192001B975A /* button_camilo.png */,
 				B35A1337155D6192001B975A /* button_mark.png */,
 				B3C205B2155C047500052E01 /* Default.png */,
@@ -835,6 +912,20 @@
 				B3C205C4155C047500052E01 /* iTunesArtwork in Resources */,
 				B35A1338155D6192001B975A /* button_camilo.png in Resources */,
 				B35A1339155D6192001B975A /* button_mark.png in Resources */,
+				B3C3059D1560212700DE4F71 /* topMenu.png in Resources */,
+				B3C305B9156065CD00DE4F71 /* buttonMusic.png in Resources */,
+				B3C305BA156065CD00DE4F71 /* buttonMusicPress.png in Resources */,
+				B3C305BB156065CD00DE4F71 /* buttonPhotos.png in Resources */,
+				B3C305BC156065CD00DE4F71 /* buttonPhotosPress.png in Resources */,
+				B3C305BD156065CD00DE4F71 /* buttonPlay.png in Resources */,
+				B3C305BE156065CD00DE4F71 /* buttonPlayPress.png in Resources */,
+				B3C305BF156065CD00DE4F71 /* buttonVideos.png in Resources */,
+				B3C305C0156065CD00DE4F71 /* buttonVideosPress.png in Resources */,
+				B3C305CD156129C800DE4F71 /* windowImage1.png in Resources */,
+				B3C305CE156129C800DE4F71 /* windowImage2.png in Resources */,
+				B3C305CF156129C800DE4F71 /* windowImage3.png in Resources */,
+				B3C305D0156129C800DE4F71 /* windowImage4.png in Resources */,
+				B3C305D1156129C800DE4F71 /* windowImage5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -945,6 +1036,13 @@
 				B3C2070A155C047F00052E01 /* HelloWorldLayer.m in Sources */,
 				B35A132F155D5961001B975A /* SceneCamilo.m in Sources */,
 				B35A1332155D59AA001B975A /* SceneMark.m in Sources */,
+				B3C3059B15601F2800DE4F71 /* TopMenuLayer.m in Sources */,
+				B3C305A8156030DB00DE4F71 /* OptionsMenuLayer.m in Sources */,
+				B3C306311561AD8F00DE4F71 /* PlayLayer.m in Sources */,
+				B3C306341561AF5000DE4F71 /* PhotosLayer.m in Sources */,
+				B3C3063A1561B2D600DE4F71 /* MusicLayer.m in Sources */,
+				B3C3063D1561B3D600DE4F71 /* VideosLayer.m in Sources */,
+				B3C306401561BB6100DE4F71 /* HomeMenuLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
