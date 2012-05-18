@@ -11,7 +11,7 @@
 @implementation PlayLayer
 
 @synthesize bgPlay;
-@synthesize activeChildLayer;
+@synthesize activeChildLayer, distance, positionInitial;
 
 - (id) init
 {
@@ -27,16 +27,42 @@
 
 - (BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    NSLog(@"touch began");
-    SceneCamilo *parentScene = (SceneCamilo *)self.parent;
-    CGPoint location = [self convertTouchToNodeSpace:touch];
-    location = [[CCDirector sharedDirector] convertToGL:location];
-    
-	if (CGRectContainsPoint([self boundingBox], location)) {
-        [parentScene goHome];
+    CGPoint location = [touch locationInView:[touch view]];
+	location = [[CCDirector sharedDirector] convertToUI:location];
+    if (CGRectContainsPoint([self boundingBox], location)) {
+        //NSLog(@"entro a boundBox Play");
+        self.distance = location.x - self.position.x;
+        self.positionInitial = location.x;
         return YES;
     }
     return NO;
+}
+
+- (void)ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    //NSLog(@"entro a move Play");
+    CGPoint location = [touch locationInView:[touch view]];
+    location = [[CCDirector sharedDirector] convertToUI:location];
+    location.y = [self position].y;
+    location.x = location.x - distance;
+    [self setPosition:location];
+}
+
+- (void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    SceneCamilo *parentScene = (SceneCamilo *)self.parent;
+    CGPoint location = [touch locationInView:[touch view]];
+	location = [[CCDirector sharedDirector] convertToUI:location];
+    CGSize size = [[CCDirector sharedDirector] winSize];
+    int finalDistance = location.x - self.positionInitial;
+    if(size.width/3 > finalDistance)
+    {
+        id move = [CCMoveTo actionWithDuration:0.3 position:ccp(100,0)];
+        [self runAction:move];
+    }
+    else {
+        [parentScene selectedOptionTag:self.tag+1];
+    }
 }
 
 -(void) registerWithTouchDispatcher

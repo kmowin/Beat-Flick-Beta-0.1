@@ -12,10 +12,10 @@
 @interface VideosLayer : CCLayer
 {
     CCSprite * bgVideos;
-    int activeChildLayer;
+    int activeChildLayer, distance, positionInitial;
 }
 
 @property (nonatomic,retain) CCSprite *bgVideos;
-@property (nonatomic) int activeChildLayer;
+@property (nonatomic) int activeChildLayer, distance, positionInitial;
 
 @end

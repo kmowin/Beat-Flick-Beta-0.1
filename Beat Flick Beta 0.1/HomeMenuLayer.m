@@ -27,13 +27,11 @@
 
 - (BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    NSLog(@"touch began");
-    SceneCamilo *parentScene = (SceneCamilo *)self.parent;
-    CGPoint location = [self convertTouchToNodeSpace:touch];
+    CGPoint location = [touch locationInView:[touch view]];
     location = [[CCDirector sharedDirector] convertToGL:location];
     
 	if (CGRectContainsPoint([self boundingBox], location)) {
-        [parentScene goHome];
+        //NSLog(@"entro a bounding del Home");
         return YES;
     }
     return NO;

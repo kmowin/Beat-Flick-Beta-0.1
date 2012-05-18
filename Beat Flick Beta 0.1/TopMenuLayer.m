@@ -26,12 +26,13 @@
 
 - (BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    NSLog(@"touch began");
     SceneCamilo *parentScene = (SceneCamilo *)self.parent;
-    CGPoint location = [self convertTouchToNodeSpace:touch];
+    CGPoint location = [touch locationInView:[touch view]];
+    //location = [parentScene convertToWorldSpace:location];
     location = [[CCDirector sharedDirector] convertToGL:location];
 
 	if (CGRectContainsPoint([self boundingBox], location)) {
+        //NSLog(@"entro a bounding Top");
         [parentScene goHome];
         return YES;
     }

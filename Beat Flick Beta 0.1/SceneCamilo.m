@@ -72,8 +72,15 @@ enum {
 }
 
 
--(void) selectedOption: (CCMenuItemImage*) item
+-(void) selectedOptionMenu: (CCMenuItemImage*) item
 {
+    int temporal = item.tag;
+    [self selectedOptionTag:temporal];
+}
+    
+-(void) selectedOptionTag: (int) tag
+{
+    int option = tag;
     int activeTag;
     CCLayer *activeLayer;
     CCLayer *parentLayer;
@@ -82,68 +89,74 @@ enum {
         activeLayer = (CCLayer *)[menuLayers objectAtIndex: i];
         if(activeLayer.zOrder == 1)
         {
-            activeTag = activeLayer.tag;  
-            [self reorderChild:activeLayer z:2];
-            parentLayer = activeLayer;
+            activeTag = activeLayer.tag;
+            if(activeLayer.tag != option)
+            {
+                [self reorderChild:activeLayer z:2];
+                parentLayer = activeLayer;
+            }
         }
     }
-    int option = item.tag;
-    switch (option) {
-        case tagPlayLayer:
-            playLayer.activeChildLayer = activeTag;
-            for(int i=0; i < menuLayers.count; i++)
-            {
-                activeLayer = (CCLayer *)[menuLayers objectAtIndex: i];
-                if(activeLayer != parentLayer && activeLayer != playLayer)
-                    [self reorderChild:activeLayer z:0];
-            }
-            [playLayer setPosition:ccp(100, 0)];
-            [self reorderChild:playLayer z:1];
+    
+    if(option != activeTag)
+    {
+        switch (option) {
+            case tagPlayLayer:
+                playLayer.activeChildLayer = activeTag;
+                for(int i=0; i < menuLayers.count; i++)
+                {
+                    activeLayer = (CCLayer *)[menuLayers objectAtIndex: i];
+                    if(activeLayer != parentLayer && activeLayer != playLayer)
+                        [self reorderChild:activeLayer z:0];
+                }
+                [playLayer setPosition:ccp(100, 0)];
+                [self reorderChild:playLayer z:1];
 
-            break;
-        case tagPhotosLayer:
-            photosLayer.activeChildLayer = activeTag;
-            for(int i=0; i < menuLayers.count; i++)
-            {
-                activeLayer = (CCLayer *)[menuLayers objectAtIndex: i];
-                if(activeLayer != parentLayer && activeLayer != photosLayer)
-                    [self reorderChild:activeLayer z:0];
-            }                
-            [photosLayer setPosition:ccp(100, 0)];
-            [self reorderChild:photosLayer z:1];
+                break;
+            case tagPhotosLayer:
+                photosLayer.activeChildLayer = activeTag;
+                for(int i=0; i < menuLayers.count; i++)
+                {
+                    activeLayer = (CCLayer *)[menuLayers objectAtIndex: i];
+                    if(activeLayer != parentLayer && activeLayer != photosLayer)
+                        [self reorderChild:activeLayer z:0];
+                }                
+                [photosLayer setPosition:ccp(100, 0)];
+                [self reorderChild:photosLayer z:1];
 
-            break;
-        case tagMusicLayer:
-            musicLayer.activeChildLayer = activeTag;
-            for(int i=0; i < menuLayers.count; i++)
-            {
-                activeLayer = (CCLayer *)[menuLayers objectAtIndex: i];
-                if(activeLayer != parentLayer && activeLayer != musicLayer)
-                    [self reorderChild:activeLayer z:0];
-            }
-            [musicLayer setPosition:ccp(100, 0)];
-            [self reorderChild:musicLayer z:1];
+                break;
+            case tagMusicLayer:
+                musicLayer.activeChildLayer = activeTag;
+                for(int i=0; i < menuLayers.count; i++)
+                {
+                    activeLayer = (CCLayer *)[menuLayers objectAtIndex: i];
+                    if(activeLayer != parentLayer && activeLayer != musicLayer)
+                        [self reorderChild:activeLayer z:0];
+                }
+                [musicLayer setPosition:ccp(100, 0)];
+                [self reorderChild:musicLayer z:1];
 
-            break;
-        case tagVideosLayer:
-            videosLayer.activeChildLayer = activeTag;
-            for(int i=0; i < menuLayers.count; i++)
-            {
-                activeLayer = (CCLayer *)[menuLayers objectAtIndex: i];
-                if(activeLayer != parentLayer && activeLayer != videosLayer)
-                    [self reorderChild:activeLayer z:0];
-            }
-            [videosLayer setPosition:ccp(100, 0)];
-            [self reorderChild:videosLayer z:1];
+                break;
+                case tagVideosLayer:
+                videosLayer.activeChildLayer = activeTag;
+                for(int i=0; i < menuLayers.count; i++)
+                {
+                    activeLayer = (CCLayer *)[menuLayers objectAtIndex: i];
+                    if(activeLayer != parentLayer && activeLayer != videosLayer)
+                        [self reorderChild:activeLayer z:0];
+                }
+                [videosLayer setPosition:ccp(100, 0)];
+                [self reorderChild:videosLayer z:1];
             
-            break;
-    };
-    [self runAnimationLayer:parentLayer];
+                break;
+        };
+        [self runAnimationLayer:parentLayer];
+    }
 }
 
 -(void) runAnimationLayer: (CCLayer *) activeLayer
 {
-    id move = [CCMoveTo actionWithDuration:0.5 position:ccp(470,0)];
+    id move = [CCMoveTo actionWithDuration:0.3 position:ccp(480,0)];
     [activeLayer runAction:move];
 }
 

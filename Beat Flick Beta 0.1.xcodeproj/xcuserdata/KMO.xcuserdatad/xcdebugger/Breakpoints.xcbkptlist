@@ -21,26 +21,22 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Beat Flick Beta 0.1/SceneCamilo.m"
-         timestampString = "358963800.97151"
+         timestampString = "358991840.925224"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "93"
-         endingLineNumber = "93"
-         landmarkName = "-selectedOption:"
-         landmarkType = "5">
+         startingLineNumber = "103"
+         endingLineNumber = "103">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Beat Flick Beta 0.1/SceneCamilo.m"
-         timestampString = "358964455.580791"
+         timestampString = "358991840.925224"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "147"
-         endingLineNumber = "147"
-         landmarkName = "-runAnimationLayer:"
-         landmarkType = "5">
+         startingLineNumber = "160"
+         endingLineNumber = "160">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

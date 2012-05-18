@@ -12,10 +12,10 @@
 @interface MusicLayer : CCLayer
 {
     CCSprite * bgMusic;
-    int activeChildLayer;
+    int activeChildLayer, distance, positionInitial;
 }
 
 @property (nonatomic,retain) CCSprite *bgMusic;
-@property (nonatomic) int activeChildLayer;
+@property (nonatomic) int activeChildLayer, distance, positionInitial;
 
 @end

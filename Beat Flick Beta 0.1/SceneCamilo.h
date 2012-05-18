@@ -33,11 +33,10 @@
     MusicLayer *musicLayer;
     VideosLayer *videosLayer;
     CCArray *menuLayers;
-    CCArray *hierarchyMenu;
 }
 
--(void) selectedOption:(CCMenuItemImage*) item;
-
+-(void) selectedOptionMenu:(CCMenuItemImage*) item;
+-(void) selectedOptionTag: (int) tag;
 -(void) goHome;
 
 @end

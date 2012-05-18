@@ -12,10 +12,10 @@
 @interface PhotosLayer : CCLayer
 {
     CCSprite * bgPhotos;
-    int activeChildLayer;
+    int activeChildLayer, distance, positionInitial;
 }
 
 @property (nonatomic,retain) CCSprite *bgPhotos;
-@property (nonatomic) int activeChildLayer;
+@property (nonatomic) int activeChildLayer, distance, positionInitial;
 
 @end

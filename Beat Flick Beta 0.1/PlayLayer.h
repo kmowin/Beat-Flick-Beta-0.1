@@ -12,10 +12,10 @@
 @interface PlayLayer : CCLayer
 {
     CCSprite * bgPlay;
-    int activeChildLayer;
+    int activeChildLayer, distance, positionInitial;
 }
 
 @property (nonatomic,retain) CCSprite *bgPlay;
-@property (nonatomic) int activeChildLayer;
+@property (nonatomic) int activeChildLayer, distance, positionInitial;
 
 @end
